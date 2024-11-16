@@ -81,7 +81,7 @@ I have used SQL and Power BI as well to generate report and validate ad-hoc anal
     + Steps:
         + First create 4 another sheets (fact_orders, dim_customers, dim_poducts, dim_date)
         + In fact_orders sheet, paste data from main sheet and delete irrelevant columns as per output preview.
-        + Then extract unique customer_id fom main sheet using UNIQUE() function and paste as value in dim_customer sheet and named column as "customer_id".
+        + Then extract unique customer_id from main sheet using UNIQUE() function and paste as value in dim_customer sheet and named column as "customer_id".
         + After that extract customer name and city in dim_customer table using INDEX and MATCH function from main sheet.
         + The above same steps are followed for dim_date and dim_products as per output preview mentioned below.
 
