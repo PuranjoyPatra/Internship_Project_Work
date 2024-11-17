@@ -36,8 +36,8 @@ cte2 as (select name, count(*) as total_present from attendance
 where month = "Apr" and status in ("WFH", "WFO")
 group by name)
 
-select (tot_wfh/total_present)*100 as wfh_pct from cte1 
+select cte1.name, (tot_wfh/total_present)*100 as wfh_pct from cte1 
 join cte2 on cte1.name = cte2.name
-having wfh_pct > 10
+having wfh_pct > 10.00
 
 
